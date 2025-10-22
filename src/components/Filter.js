@@ -1,3 +1,4 @@
+
 import React from "react";
 
 function Filter({ category, onCategoryChange }) {
@@ -8,10 +9,12 @@ function Filter({ category, onCategoryChange }) {
         value={category}
         onChange={(e) => onCategoryChange(e.target.value)}
       >
-        <option value="All">Filter by category</option>
+        <option value="All">All</option>
         <option value="Produce">Produce</option>
         <option value="Dairy">Dairy</option>
-        <option value="Dessert">Dessert</option>
+        <option value="Meat">Meat</option>
+        <option value="Grains">Grains</option>
+        <option value="Beverages">Beverages</option>
       </select>
     </div>
   );
